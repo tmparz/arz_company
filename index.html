@@ -325,7 +325,7 @@
           <span class="section-kicker">REAL WORKFLOWS · PRODUCT INSIGHTS</span>
           <span class="chip chip--green">團隊實作場景 / 產品驗證經驗</span>
           <h2 id="cases-title">每個現場的麻煩事，<br>都在幫我們長出下一個產品模組。</h2>
-          <p>ARZ AI 從不同產業的實際工作流程出發，觀察重複輸入、人工核對、跨系統協調等問題。以下是團隊參與的專案場景與技術設計經驗；我們正將共通能力整理成更容易導入的 SaaS 產品。</p>
+          <p>ARZ AI 從不同產業的實際工作流程出發，觀察重複輸入、人工核對、跨系統協調等問題。以下兩個實際開發專案，分別驗證了「預約排程」與「表單、訂單、文件」兩類高頻流程。我們正從已具程式實作的能力中整理共用模組，逐步打造可設定、可跨企業使用的 SaaS。</p>
         </div>
         <div class="case-grid">
           <article class="case-card case-card--blue">
@@ -345,15 +345,15 @@
               <div><span class="case-number">FIELD NOTE 01</span><span class="case-category">運動場館 · LINE 預約</span></div>
             </div>
             <h3>當電話、現場與 LINE 都有人訂場，怎麼避免撞期？</h3>
-            <p class="case-lead">場館原本透過電話和現場處理預約，既有管理系統也不能說換就換。新入口必須配合場地規則、營業時間與人工審核。</p>
+            <p class="case-lead">既有電話、現場與舊系統同時運作；新 LINE 入口需要處理營業例外、前後緩衝、多人同時選位及管理員審核，不能只靠一張預約表單。</p>
             <div class="case-divider"></div>
             <h4>我們處理的流程課題</h4>
             <ul class="case-points">
-              <li>以 LINE 作為顧客預約入口，整理場地、日期與可選時段。</li>
-              <li>將每場使用時間、前後緩衝、休館日與臨時營業例外納入排程邏輯。</li>
-              <li>考慮多人同時選位的衝突檢查，並保留管理員審核及既有系統銜接。</li>
+              <li>在 LINE 選擇場地與日期，依週營業模板、休館例外與預約使用時間產生可用時段。</li>
+              <li>結合前後緩衝與占用狀態，預約送出時重新驗證時間衝突，處理同時搶位情境。</li>
+              <li>保留管理員核准／拒絕操作，以及預約資料匯出，與既有管理方式銜接。</li>
             </ul>
-            <div class="case-reuse"><strong>提煉中的 SaaS 共用模組</strong><div class="case-tags"><span>資源與時段設定</span><span>衝突檢查</span><span>審核流程</span><span>舊系統整合</span></div></div>
+            <div class="case-reuse"><strong>提煉中的 SaaS 共用模組</strong><div class="case-tags"><span>資源與時段設定</span><span>衝突檢查</span><span>審核流程</span><span>舊系統資料匯出</span></div></div><a class="dossier-cta" href="cases.html#case-1">看完整案例：流程、實作與 SaaS 模組 ↗</a>
           </article>
           <article class="case-card case-card--coral">
             <div class="case-top">
@@ -378,11 +378,22 @@
             <ul class="case-points">
               <li>以 LINE 服務入口及線上表單蒐集報名所需資訊。</li>
               <li>將報名資料、付款資訊與訂單狀態集中供後台追蹤。</li>
-              <li>規劃由資料驅動文書與疏文製作流程，減少人工轉抄。</li>
+              <li>由報名與訂單資料產出 Excel 清冊與批次疏文 PDF，支援文件排版調整。</li>
             </ul>
-            <div class="case-reuse"><strong>提煉中的 SaaS 共用模組</strong><div class="case-tags"><span>動態表單</span><span>訂單追蹤</span><span>付款核對流程</span><span>文件產生</span></div></div>
+            <div class="case-reuse"><strong>提煉中的 SaaS 共用模組</strong><div class="case-tags"><span>動態表單</span><span>訂單追蹤</span><span>付款核對流程</span><span>清冊與 PDF 產生</span></div></div><a class="dossier-cta" href="cases.html#case-2">看完整案例：從報名到文件輸出 ↗</a>
           </article>
         </div>
+        <aside class="venture-panel" aria-label="ARZ AI 的 SaaS 產品化方向">
+          <span class="tiny-label">REPEATABLE SAAS / 產品策略</span>
+          <h3>從一次性導入，走向可以重複使用的產品。</h3>
+          <p>我們先解決一個具體流程，再將跨產業重複出現的規則整理成產品模組。預約管理是第一個產品切入點；活動報名與文件流程則拓展了後續可產品化的能力。</p>
+          <div class="venture-grid">
+            <div class="venture-point"><strong>01 已具備實作基礎</strong><p>LINE 預約、時段規則、衝突檢查、審核、訂單與文件處理。</p></div>
+            <div class="venture-point"><strong>02 持續產品化</strong><p>多企業管理、產業模板與各企業獨立設定，降低每個導入案重做的工作量。</p></div>
+            <div class="venture-point"><strong>03 商業化方向</strong><p>以訂閱式 SaaS 搭配導入整合服務為規劃，先聚焦台灣中小企業的實際需求。</p></div>
+          </div>
+          <a class="btn btn--green" href="cases.html">閱讀兩個完整的專案案例 ↗</a>
+        </aside>
         <div class="case-platform">
           <div class="case-platform-head"><span class="section-kicker">FROM PROJECT TO PRODUCT</span><h3>同一套底層能力，讓不同產業自己設定流程。</h3><p>兩個專案看起來不同，核心都需要「讓使用者送出需求 → 依規則處理 → 管理者確認 → 更新狀態」。我們正在把這些共通步驟沉澱為可配置的產品能力。</p></div>
           <div class="platform-steps" aria-label="共用流程架構">
