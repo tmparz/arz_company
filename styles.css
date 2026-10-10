@@ -328,3 +328,63 @@ p { line-height: 1.95; }
   .case-category { font-size: .84rem; }
   .platform-steps>div { padding: 13px 11px; }
 }
+
+
+/* Product field notes, detailed case studies */
+.dossier-nav { display:flex; align-items:center; gap:clamp(12px,3vw,30px); }
+.dossier-nav a { font:800 .96rem var(--hand); text-decoration:none; }
+.dossier-nav a:hover { text-decoration:underline; text-underline-offset:6px; }
+.dossier-intro { background:var(--paper); border-bottom:var(--border); }
+.dossier-intro h1 { max-width:940px; font-size:clamp(2.6rem,6vw,4.5rem); }
+.dossier-lead { max-width:800px; font-size:clamp(1.03rem,2vw,1.2rem); }
+.dossier-badges,.dossier-links { display:flex; flex-wrap:wrap; gap:12px; margin-top:25px; }
+.dossier-badges .chip { max-width:100%; }
+.dossier-cases { background:var(--paper); }
+.dossier-case { background:var(--white); border:var(--border); border-radius:36px; padding:clamp(22px,4vw,45px); margin-bottom:34px; }
+.dossier-case:nth-child(2) { background:#FFFCF6; }
+.dossier-case-top { display:grid; grid-template-columns:minmax(170px,230px) minmax(0,1fr); gap:25px; align-items:center; margin-bottom:28px; }
+.dossier-case-top > div:first-child { background:var(--blue); border:var(--border); border-radius:25px; padding:12px; }
+.dossier-case:nth-child(2) .dossier-case-top > div:first-child { background:var(--yellow); }
+.dossier-case-top h2 { font-size:clamp(1.85rem,4vw,2.9rem); margin-top:12px; }
+.dossier-sub { font-weight:700; font-size:1.07rem; margin:0; }
+.dossier-problem { padding:20px 24px; border:var(--border); border-radius:23px; background:var(--green); }
+.dossier-case:nth-child(2) .dossier-problem { background:var(--coral); }
+.dossier-problem p { margin-bottom:0; }
+.dossier-small-title { margin:32px 0 18px; }
+.dossier-steps { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+.dossier-step { display:flex; gap:13px; border:2px solid var(--ink); border-radius:20px; padding:20px; background:var(--white); }
+.step-n { flex:none; width:35px; height:35px; display:grid; place-items:center; background:var(--yellow); border:2px solid var(--ink); border-radius:12px; font:900 .95rem var(--hand); }
+.dossier-step h3 { font-size:1.2rem; }
+.dossier-step p { font-size:.94rem; margin-bottom:0; }
+.dossier-case-bottom { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin-top:22px; }
+.dossier-case-bottom > div { padding:18px; border:2px dashed var(--ink); border-radius:18px; overflow-wrap:anywhere; }
+.dossier-case-bottom > div p { font-size:.9rem; margin:9px 0 0; }
+.dossier-stage-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:15px; }
+.dossier-stage { border:var(--border); border-radius:24px; background:var(--paper); padding:24px; }
+.dossier-stage:nth-child(2) { background:var(--yellow); }
+.dossier-stage:nth-child(3) { background:var(--blue); }
+.dossier-stage p { margin:17px 0 0; }
+.dossier-strategy { border:var(--border); border-radius:30px; padding:clamp(24px,5vw,50px); margin-top:36px; background:var(--green); }
+.dossier-strategy p { max-width:850px; }
+.venture-panel { margin-top:24px; padding:clamp(20px,4vw,35px); background:var(--yellow); border:var(--border); border-radius:26px; }
+.venture-panel h3 { font-size:clamp(1.45rem,3vw,2rem); }
+.venture-panel .venture-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin:17px 0 20px; }
+.venture-panel .venture-point { border:2px solid var(--ink); border-radius:18px; padding:19px; background:var(--paper); }
+.venture-point strong { display:block; font:900 1.06rem var(--hand); margin-bottom:7px; }
+.venture-point p { font-size:.91rem; margin:0; }
+.dossier-cta { display:inline-flex; margin-top:20px; font:800 1rem var(--hand); text-decoration:underline; text-underline-offset:5px; }
+@media(max-width:800px) {
+ .dossier-nav { display:none; }
+ .dossier-steps { grid-template-columns:1fr; }
+ .dossier-case-bottom,.dossier-stage-grid,.venture-panel .venture-grid { grid-template-columns:1fr; }
+}
+@media(max-width:590px) {
+ .dossier-case-top { grid-template-columns:1fr; }
+ .dossier-case-top > div:first-child { max-width:225px; }
+ .dossier-links .btn { width:100%; }
+ .dossier-case { border-radius:25px; }
+}
+@media(prefers-reduced-motion:reduce) {
+ .dossier-cta,.dossier-links .btn { transition:none; }
+}
+
