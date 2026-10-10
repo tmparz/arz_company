@@ -470,3 +470,13 @@ p { line-height: 1.95; }
   .platform-flow-step {padding:20px 22px;}
 }
 @media(prefers-reduced-motion:reduce) {.platform-art svg {animation:none;}}
+
+/* Case study operating examples with grounded validation criteria */
+.dossier-operational { margin-top:27px; border:2px dashed var(--ink); border-radius:25px; background:var(--paper); padding:clamp(20px,3vw,30px); }
+.dossier-operational h3 { max-width:800px; font-size:clamp(1.3rem,2.5vw,1.95rem); }
+.dossier-rule-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:22px;}
+.dossier-rule-grid > div {background:var(--white);border:2px solid var(--ink);border-radius:20px;padding:19px;min-width:0;}
+.dossier-rule-grid strong {display:block;font:900 1.1rem/1.6 var(--hand);margin-bottom:7px;}
+.dossier-rule-grid p {font-size:.91rem;line-height:1.8;margin:0;}
+.dossier-metric {font-size:.89rem;line-height:1.8;margin:22px 0 0;}
+@media(max-width:620px){.dossier-rule-grid {grid-template-columns:1fr;}}
