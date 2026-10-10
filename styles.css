@@ -218,3 +218,51 @@ p { line-height: 1.95; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* SaaS product storytelling: hand-drawn notebook cards, no gradients. */
+.saas-depth .section-heading, .saas-industries .section-heading { max-width: 850px; }
+.saas-depth .section-heading p, .saas-industries .section-heading p { max-width: 770px; }
+.saas-story { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin-top:32px; }
+.story-step { position:relative; background:var(--white); border:var(--border); border-radius:25px; padding:22px 19px 18px; min-width:0; }
+.story-step:nth-child(2) {background:#FDF7E8;}
+.story-step:nth-child(3) {background:#F2F8ED;}
+.story-step:nth-child(4) {background:#FCF0EC;}
+.story-number { display:inline-block; font:900 1.7rem/1 var(--hand); margin-right:10px; }
+.story-step h3 { font:900 1.18rem/1.4 var(--hand); margin:18px 0 7px; }
+.story-step p { margin:0; font-size:.91rem; line-height:1.65; }
+.saas-dual { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin:22px 0 0; }
+.saas-role { border:var(--border); border-radius:28px; padding:28px 29px; }
+.saas-role--customer { background:var(--yellow); }
+.saas-role--operator { background:var(--blue); }
+.saas-role h3 { margin:10px 0; font:900 1.38rem/1.5 var(--hand); }
+.saas-role p { max-width:480px; margin:0 0 13px; }
+.text-cta {font-weight:800; display:inline-flex; padding:2px 0; }
+.saas-heading-space { margin-top:76px; }
+.saas-feature-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:17px; margin-top:28px; }
+.saas-feature { background:var(--white); border:var(--border); border-radius:25px; padding:23px; min-width:0; display:flex; flex-direction:column; }
+.feature-top { display:flex; align-items:flex-start; justify-content:space-between; gap:8px; margin-bottom:6px; }
+.feature-top svg { width:65px; height:65px; flex:none; }
+.feature-sticker {display:inline-block; font:900 .87rem var(--hand); background:var(--paper); border:2px solid var(--ink); border-radius:11px; padding:2px 9px; }
+.saas-feature h3 {font:900 1.23rem/1.45 var(--hand); margin:10px 0 7px;}
+.saas-feature p {margin:0 0 17px; line-height:1.7; font-size:.94rem; }
+.saas-feature small {margin-top:auto; font-weight:800; opacity:.8; border-top:2px dashed rgba(62,58,57,.25); padding-top:12px; }
+.industry-grid {display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; margin-top:30px;}
+.industry-card {border:var(--border); border-radius:29px; padding:25px; min-width:0;}
+.industry-card--yellow {background:var(--yellow);} .industry-card--blue {background:var(--blue);} .industry-card--green {background:var(--green);}
+.industry-doodle {border:3px solid var(--ink); border-radius:17px; width:57px; height:57px; display:grid; place-items:center; background:var(--paper); font:900 2rem/1 var(--hand);}
+.industry-card h3 {font:900 1.22rem/1.5 var(--hand); margin:15px 0 6px;}
+.industry-card p {margin:0 0 20px; line-height:1.7;}
+.industry-tags {display:flex; flex-wrap:wrap; gap:7px;}
+.industry-tags span {font:800 .78rem/1.4 var(--hand); padding:5px 9px; border:2px solid var(--ink); border-radius:99px; background:var(--paper);}
+.roadmap-layout {display:grid; grid-template-columns:.85fr 1.15fr; gap:40px; align-items:start;}
+.roadmap-intro p {max-width:450px;}
+.roadmap-track {display:grid; gap:14px;}
+.roadmap-item {display:flex; align-items:flex-start; gap:17px; border:var(--border); border-radius:22px; background:var(--white); padding:21px 22px; }
+.roadmap-item h3 {font:900 1.16rem/1.5 var(--hand); margin:5px 0;}
+.roadmap-item p {font-size:.91rem; margin:0; line-height:1.7;}
+.roadmap-marker {height:45px; width:45px; border:2px solid var(--ink); border-radius:15px; flex:none; display:grid; place-items:center; font:900 1.5rem/1 var(--hand);}
+.roadmap-marker--green {background:var(--green);} .roadmap-marker--yellow {background:var(--yellow);} .roadmap-marker--blue {background:var(--blue);}
+.saas-trust-note { margin:26px 0 0; background:var(--paper); border:2px dashed var(--ink); border-radius:17px; padding:17px 20px; font-size:.88rem; line-height:1.75;}
+@media(max-width:930px) {.saas-story {grid-template-columns:repeat(2,minmax(0,1fr));} .saas-feature-grid {grid-template-columns:repeat(2,minmax(0,1fr));} .industry-grid {grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:760px) {.roadmap-layout {grid-template-columns:1fr; gap:24px;} .saas-heading-space {margin-top:50px;} }
+@media(max-width:520px) {.saas-story,.saas-dual,.saas-feature-grid,.industry-grid {grid-template-columns:1fr;} .story-step,.saas-role,.saas-feature,.industry-card {padding:21px;} .roadmap-item {padding:17px; gap:12px;} .feature-top svg {width:55px;height:55px;}}
