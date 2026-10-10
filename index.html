@@ -36,6 +36,8 @@
       <nav class="nav-links" id="primary-nav" aria-label="主要選單">
         <a href="#services">解決方案</a>
         <a href="#product">預約系統</a>
+          <a href="#saas-details">SaaS 功能</a>
+          <a href="#industries">適用產業</a>
         <a href="#about">關於我們</a>
         <a href="#faq">常見問題</a>
         <a class="btn btn--small btn--yellow" href="#contact">聊聊需求 <span aria-hidden="true">↗</span></a>
@@ -254,6 +256,78 @@
           </div>
         </div>
       </div>
+    </section>
+
+
+    <!-- SaaS capabilities: distinguish current implementation patterns from platform roadmap. -->
+    <section class="section saas-depth paper-area" id="saas-details" aria-labelledby="saas-depth-title">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">THE PRODUCT / HOW IT WORKS</span>
+          <h2 id="saas-depth-title">一套預約流程，<br>把前台與後台串在一起。</h2>
+          <p>一個預約，通常要有人回訊息、查時間、記資料、通知同事，甚至再重新確認一次。ARZ AI 的預約產品從這條日常流程出發，把可標準化的步驟交給系統處理。</p>
+        </div>
+        <div class="saas-story" aria-label="預約流程四個步驟">
+          <div class="story-step"><span class="story-number">01</span><span class="chip chip--yellow">顧客端</span><h3>找到服務</h3><p>從預約入口了解可選服務或場地，減少反覆詢問。</p></div>
+          <div class="story-step"><span class="story-number">02</span><span class="chip chip--blue">顧客端</span><h3>挑選時段</h3><p>依營業安排與可用空檔顯示時段，讓顧客自行選擇。</p></div>
+          <div class="story-step"><span class="story-number">03</span><span class="chip chip--green">系統處理</span><h3>檢查與送出</h3><p>預約送出時再次檢查時段是否衝突，依規則建立或等待審核。</p></div>
+          <div class="story-step"><span class="story-number">04</span><span class="chip chip--coral">店家端</span><h3>集中管理</h3><p>管理人員查看預約、處理確認與安排，讓資訊集中。</p></div>
+        </div>
+        <div class="saas-dual">
+          <article class="saas-role saas-role--customer">
+            <span class="tiny-label">FOR PEOPLE BOOKING</span>
+            <h3>想預約的人，少等一句回覆。</h3>
+            <p>清楚知道有哪些服務與時段可以選，減少電話、私訊來回確認。這份體驗也適合日後延伸到不同服務業。</p>
+            <a class="text-cta" href="#product">操作預約者示範 ↗</a>
+          </article>
+          <article class="saas-role saas-role--operator">
+            <span class="tiny-label">FOR BUSINESS TEAMS</span>
+            <h3>接單的人，少開幾個視窗。</h3>
+            <p>把時段設定、預約狀態與管理作業放到同一個流程，讓團隊不必靠記憶與手抄維持秩序。</p>
+            <a class="text-cta" href="#product">切換店家視角 ↗</a>
+          </article>
+        </div>
+        <div class="section-heading saas-heading-space">
+          <span class="section-kicker">WHAT THE SYSTEM HANDLES</span>
+          <h2>把產品拆開來看，<br>每個環節都有工作要做。</h2>
+          <p>以下說明來自我們已建置的預約系統案例。實際對外導入項目須依現有版本、場域規則與部署設定確認。</p>
+        </div>
+        <div class="saas-feature-grid">
+          <article class="saas-feature"><div class="feature-top"><span class="feature-sticker">01 · 入口</span><svg viewBox="0 0 64 64" aria-hidden="true"><rect x="18" y="5" width="28" height="54" rx="7" fill="#A8D3E6" stroke="#3E3A39" stroke-width="3"/><path d="M23 16h18m-18 9h18m-12 21h6" stroke="#3E3A39" stroke-width="3" stroke-linecap="round"/><circle cx="32" cy="37" r="5" fill="#F6D27A" stroke="#3E3A39" stroke-width="2"/></svg></div><h3>LINE 預約入口</h3><p>以常用的 LINE 介面選擇日期與時段，降低顧客重新學習工具的門檻。</p><small>既有預約系統案例</small></article>
+          <article class="saas-feature"><div class="feature-top"><span class="feature-sticker">02 · 時間</span><svg viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="12" width="48" height="43" rx="8" fill="#F6D27A" stroke="#3E3A39" stroke-width="3"/><path d="M8 24h48M20 7v11m24-11v11M18 35h9m8 0h9M18 44h9" stroke="#3E3A39" stroke-width="3" stroke-linecap="round"/></svg></div><h3>營業時段與例外日</h3><p>管理每週固定營業時段，並處理休息日、臨時調整與特殊開放時間。</p><small>既有預約系統案例</small></article>
+          <article class="saas-feature"><div class="feature-top"><span class="feature-sticker">03 · 規則</span><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 7l23 10v14c0 14-11 23-23 27C20 54 9 45 9 31V17z" fill="#B9DAA5" stroke="#3E3A39" stroke-width="3"/><path d="M20 31l9 9 16-18" stroke="#3E3A39" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>撞期與緩衝時間</h3><p>考慮既有預約及前後緩衝區間，送出時再檢查可用性，降低重複預約風險。</p><small>既有預約系統案例</small></article>
+          <article class="saas-feature"><div class="feature-top"><span class="feature-sticker">04 · 審核</span><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M13 9h38v48H13z" fill="#F2A497" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/><path d="M20 21h22m-22 12h22m-22 11h10" stroke="#3E3A39" stroke-width="3" stroke-linecap="round"/><circle cx="43" cy="44" r="8" fill="#F6D27A" stroke="#3E3A39" stroke-width="2"/></svg></div><h3>後台預約審核</h3><p>讓工作人員查看待處理預約，進行確認、拒絕與狀態管理，保留人工決策空間。</p><small>既有預約系統案例</small></article>
+          <article class="saas-feature"><div class="feature-top"><span class="feature-sticker">05 · 通知</span><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 17h44v31H10z" fill="#A8D3E6" stroke="#3E3A39" stroke-width="3" stroke-linejoin="round"/><path d="M10 20l22 16 22-16" fill="none" stroke="#3E3A39" stroke-width="3"/><path d="M23 52h18" stroke="#3E3A39" stroke-width="3" stroke-linecap="round"/></svg></div><h3>通知與提醒流程</h3><p>結合 LINE 預約訊息與提醒作業；正式發送效果需依各部署環境完成驗收。</p><small>依部署環境驗收</small></article>
+          <article class="saas-feature"><div class="feature-top"><span class="feature-sticker">06 · 整合</span><svg viewBox="0 0 64 64" aria-hidden="true"><rect x="6" y="20" width="21" height="22" rx="5" fill="#F6D27A" stroke="#3E3A39" stroke-width="3"/><rect x="38" y="20" width="20" height="22" rx="5" fill="#B9DAA5" stroke="#3E3A39" stroke-width="3"/><path d="M27 31h11M32 24v14" stroke="#3E3A39" stroke-width="3"/></svg></div><h3>既有流程銜接</h3><p>依企業現有作業評估資料匯出、系統串接與作業交接，逐步減少重複輸入。</p><small>依需求評估整合</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section saas-industries" id="industries" aria-labelledby="industries-title">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">WHO IT CAN HELP</span>
+          <h2 id="industries-title">不同行業，<br>有不同的預約規則。</h2>
+          <p>我們希望把共同的預約邏輯做成容易設定的 SaaS 平台，再保留各產業需要的差異。下列是正在評估的使用情境，實際提供的功能以產品版本為準。</p>
+        </div>
+        <div class="industry-grid">
+          <article class="industry-card industry-card--yellow"><span class="industry-doodle" aria-hidden="true">▣</span><h3>場地與運動空間</h3><p>管理多個空間、開放時段、使用時長與前後緩衝，降低撞期。</p><div class="industry-tags"><span>場地</span><span>時間槽</span><span>衝突檢查</span></div></article>
+          <article class="industry-card industry-card--blue"><span class="industry-doodle" aria-hidden="true">✎</span><h3>顧問、講師與個人服務</h3><p>從服務項目與可預約時間出發，減少透過私訊反覆約時間。</p><div class="industry-tags"><span>服務選擇</span><span>時段管理</span></div></article>
+          <article class="industry-card industry-card--green"><span class="industry-doodle" aria-hidden="true">✿</span><h3>工作室與小型商家</h3><p>集中整理預約需求與現場安排，讓小團隊有更一致的接待流程。</p><div class="industry-tags"><span>顧客入口</span><span>管理流程</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section paper-area saas-roadmap" id="roadmap" aria-labelledby="roadmap-title">
+      <div class="container roadmap-layout">
+        <div class="roadmap-intro"><span class="section-kicker">PRODUCT JOURNEY</span><h2 id="roadmap-title">第一站是預約，<br>下一站是企業自動化。</h2><p>我們正在把已建置的預約系統經驗，整理成不同企業更容易導入的 SaaS 服務。也會依客戶實際需求，逐步加入與 AI 協作的流程。</p><a class="btn btn--coral" href="#contact">討論產品導入 ↗</a></div>
+        <div class="roadmap-track">
+          <article class="roadmap-item"><div class="roadmap-marker roadmap-marker--green">✓</div><div><span class="tiny-label">CURRENT / 現階段</span><h3>預約管理產品與實作經驗</h3><p>已有初期預約產品與場地預約案例，持續整理規則、互動與管理流程。</p></div></article>
+          <article class="roadmap-item"><div class="roadmap-marker roadmap-marker--yellow">↗</div><div><span class="tiny-label">NEXT / 產品化方向</span><h3>多企業帳號與產業模板</h3><p>規劃以共用平台管理企業帳號，再依場地、老師或服務類型設定不同資源與預約規則。</p></div></article>
+          <article class="roadmap-item"><div class="roadmap-marker roadmap-marker--blue">✦</div><div><span class="tiny-label">EXPLORE / 規劃評估</span><h3>AI 輔助行政工作</h3><p>探索用自然語言協助查詢、整理需求與處理例行客服；涉及預約異動時仍由業務規則與確認流程把關。</p></div></article>
+        </div>
+      </div>
+      <div class="container"><p class="saas-trust-note"><strong>產品資訊說明：</strong>本站的互動預約畫面為獨立製作的前端示範；本頁所列案例能力、平台規劃與 AI 發展方向分別標示，不代表所有功能目前都已開放 SaaS 自助註冊或正式使用。</p></div>
     </section>
 
     <section class="section paper-area" id="process" aria-labelledby="process-title">
