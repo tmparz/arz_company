@@ -6,4 +6,6 @@
   <url><loc>https://arz-ai.stream/cases-en.html</loc></url>
   <url><loc>https://arz-ai.stream/platform.html</loc><xhtml:link rel="alternate" hreflang="zh-Hant" href="https://arz-ai.stream/platform.html"/><xhtml:link rel="alternate" hreflang="en" href="https://arz-ai.stream/platform-en.html"/></url>
   <url><loc>https://arz-ai.stream/platform-en.html</loc><xhtml:link rel="alternate" hreflang="zh-Hant" href="https://arz-ai.stream/platform.html"/><xhtml:link rel="alternate" hreflang="en" href="https://arz-ai.stream/platform-en.html"/></url>
+  <url><loc>https://arz-ai.stream/demo.html</loc></url>
+  <url><loc>https://arz-ai.stream/demo-en.html</loc></url>
 </urlset>

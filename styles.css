@@ -480,3 +480,42 @@ p { line-height: 1.95; }
 .dossier-rule-grid p {font-size:.91rem;line-height:1.8;margin:0;}
 .dossier-metric {font-size:.89rem;line-height:1.8;margin:22px 0 0;}
 @media(max-width:620px){.dossier-rule-grid {grid-template-columns:1fr;}}
+
+/* Booking SaaS interactive walkthrough; fictional illustration */
+.walk-title{font-size:clamp(2.4rem,5vw,4.65rem);line-height:1.3;max-width:980px}
+.walk-notice{border:2px dashed var(--ink);border-radius:19px;background:var(--white);padding:19px 24px;max-width:920px;font-size:.96rem;margin:24px 0 0}
+.walk-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start}
+.walk-card{border:var(--border);border-radius:28px;background:var(--white);padding:clamp(20px,3.3vw,34px);min-width:0}
+.walk-card--manager{background:var(--blue)}
+.walk-card h2{font-size:clamp(1.35rem,2.7vw,1.9rem);line-height:1.5;margin:17px 0 24px}
+.walk-field{border-top:2px dashed var(--ink);padding:20px 0}
+.walk-field h3{font-size:1.11rem;margin:0 0 13px}
+.walk-help{font-size:.84rem;line-height:1.7;margin:0 0 12px}
+.walk-choices{display:flex;flex-wrap:wrap;gap:8px}
+.walk-choices button,.walk-times button{border:2px solid var(--ink);background:var(--paper);color:var(--ink);padding:9px 12px;border-radius:13px;cursor:pointer;font:800 .92rem var(--hand)}
+.walk-choices button[aria-pressed=true],.walk-times button[aria-pressed=true]{background:var(--green);outline:2px solid var(--ink);outline-offset:1px}
+.walk-choices button:hover:not(:disabled),.walk-times button:hover:not(:disabled){background:var(--yellow)}
+.walk-times{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;max-height:232px;overflow-y:auto;padding:4px}
+.walk-times button{padding:10px 3px;min-width:0}
+.walk-times button:disabled{background:#e3ded4;opacity:.65;text-decoration:line-through;cursor:not-allowed}
+.walk-closed{grid-column:1/-1;padding:17px;border:2px dashed var(--ink);border-radius:13px}
+#walk-submit:disabled{opacity:.45;cursor:not-allowed;transform:none}
+.walk-message{font-weight:700;min-height:3em;line-height:1.7;margin:16px 0 0}
+.walk-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:0 0 22px}
+.walk-stats>div{display:flex;flex-direction:column;text-align:center;padding:12px 6px;background:var(--paper);border:2px solid var(--ink);border-radius:15px}
+.walk-stats strong{font:900 1.7rem var(--hand)}.walk-stats span{font-size:.82rem}
+.walk-requests{display:grid;gap:12px;max-height:450px;overflow-y:auto;min-height:170px;margin-bottom:20px}
+.walk-requests>p{border:2px dashed var(--ink);border-radius:14px;padding:17px;background:var(--paper)}
+.walk-request{border:2px solid var(--ink);border-radius:17px;background:var(--white);padding:16px;overflow-wrap:anywhere}
+.walk-request strong{display:block;font:900 1.03rem var(--hand)}
+.walk-request p{margin:8px 0}.walk-status{display:inline-block;border:2px solid var(--ink);border-radius:14px;background:var(--yellow);padding:2px 10px;font-size:.84rem;font-weight:700}
+.walk-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.walk-actions .btn{padding:9px 15px;font-size:.85rem}
+.walk-seeds{border-top:2px dashed var(--ink);margin-top:22px;padding-top:17px;font-size:.87rem}.walk-seeds strong{font:900 1rem var(--hand)}.walk-seeds p{margin:8px 0;overflow-wrap:anywhere}
+.walk-three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin:25px 0 0}
+.walk-three article{border:var(--border);border-radius:23px;padding:23px;background:var(--yellow);min-width:0}
+.walk-three article:nth-child(2){background:var(--green)}.walk-three article:nth-child(3){background:var(--blue)}
+.walk-three article>span:not(.chip){font:900 1.6rem var(--hand)}
+.walk-three p{margin:13px 0 0;font-size:.94rem}
+.walk-evidence{margin-top:40px;border-top:2px dashed var(--ink);padding-top:35px}.walk-evidence .text-cta{display:inline-block;margin-top:23px}
+@media(max-width:850px){.walk-grid,.walk-three{grid-template-columns:1fr}}
+@media(max-width:450px){.walk-times{grid-template-columns:repeat(3,minmax(0,1fr))}.walk-card{padding:18px}}
